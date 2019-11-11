@@ -1,0 +1,130 @@
+@import fonts
+@import form
+
+body
+    background: #ffffff
+    padding: 0
+    margin: 0
+    font-size: 14px
+    font-family: 'Nunito', sans-serif
+
+
+header
+    display: flex
+    border-bottom: 1px solid #eaeaea
+    height: 10vh
+    padding: 0 10vw
+
+    .header
+        &__logo
+            width: 20%
+            font-weight: bolder
+            font-size: 25px
+
+            img
+                height: 100%
+                vertical-align: middle
+
+            a
+                text-decoration: none
+                color: #1e1e1e
+        &__user
+            width: 20%
+            display: flex
+        &__user-name
+        &__user-photo
+
+            img
+                height: 100%
+                vertical-align: middle
+    
+    nav
+        display: flex
+        width: 60%
+
+        a
+            display: block
+            padding: 25px 10px
+            color: #1e1e1e
+            font-weight: lighter
+            text-decoration: none
+            border-bottom: 1px solid #ffffff
+            font-size: 20px
+            text-transform: uppercase
+
+            &:hover
+                border-bottom:  1px solid #1e1e1e
+
+main
+    padding: 40px 10vw
+    display: flex
+    min-height: 80vh
+
+    aside
+        width: 20%
+        padding-right: 5%
+    .contetnt
+        width: 75%
+    
+footer
+    padding: 5%
+    background: #efefef
+    color: #1e1e1e
+
+.footer
+    &__inner
+        max-width: 1000px
+        margin: 0 auto
+        text-align: center
+    &__links
+    &__docs
+    &__copy 
+
+
+.card
+    width: 30%
+    margin-bottom: 10px
+    background: #efefef
+    &__wrap
+        border-radius: 5px
+        border: 1px solid #aaaaaa
+        overflow: hidden
+    &__cover
+        overflow: hidden
+
+        img
+            width: 100%
+
+    &__contetnt
+        padding: 15px
+
+.button
+    padding: 7px 10px
+    border-radius: 5px
+    outline: none
+    font-size: 17px
+    font-weight: bold
+
+    &__blue
+        color: #ffffff
+        background: #38b3ff
+    &__green
+        color: #ffffff
+        background: #70e863
+    &__pink
+        color: #8c0a0a
+        background: #fb004e
+    &__gold
+        color: #9a6d29
+        background: #fbc800
+
+.game-frame
+    border: 0
+    width: 100%
+    height: 100%
+    position: fixed
+    background: #000000
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0

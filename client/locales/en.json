@@ -1,0 +1,28 @@
+{
+    "language": "language",
+    "signup": "sign up",
+    "signin": "sign in",
+
+    "store": "store",
+    "about": "about",
+
+    "new_releases": "Newest releases",
+    "recommend_for_you": "Recommend for you",
+
+    "faq": "faq",
+    "blog": "blog",
+    "contact": "contact us",
+
+    "create_account_title": "Create an account on Games JS",
+    "username": "Username",
+    "y_username": "Your username",
+    "password": "Password",
+    "y_password": "Your password",
+    "repassword": "Repeat password",
+    "email": "Email",
+    "y_email": "You email address",
+    "create_account": "Create_account",
+    "already_account": "or already have an account?",
+
+    "404": "404 Page not found"
+}

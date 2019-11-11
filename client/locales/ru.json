@@ -1,0 +1,28 @@
+{
+    "language": "язык",
+    "signup": "войти",
+    "signin": "регистрация",
+
+    "new_releases": "Новинки",
+    "recommend_for_you": "Вам может понравиться",
+
+    "store": "магазин",
+    "about": "о нас",
+
+    "faq": "faq",
+    "blog": "блог",
+    "contact": "свяжитесь с нами",
+
+    "create_account_title": "Создать аккаунт на Games JS",
+    "username": "Имя",
+    "y_username": "Ваше имя",
+    "password": "Пароль",
+    "y_password": "Ваш пароль",
+    "repassword": "Повторите пароль",
+    "email": "Email",
+    "y_email": "Ваш email адрес",
+    "create_account": "Создать аккаунт",
+    "already_account": "или у Вас уже есть аккаунт?",
+
+    "404": "404 Страница не найдена"
+}
