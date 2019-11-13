@@ -10,9 +10,15 @@
             <div class="card" v-for="(game, index) in gameList" :key="index">
                 <div class="card__wrap">
                     <div class="card__cover">
-                        <img src="/tmp/1.jpg">
+                        <div class="card__title">
+                            {{ game.name }}
+                        </div>
+                        <img src="/tmp/2.jpg">
                     </div>
-                    <router-link :to="{ name: 'game', params: { id: game.id }}" > {{ game.id }} - {{ game.name }} - {{ game.description }} </router-link>
+                    <div class="card__content">
+                         {{ game.description }}
+                    </div>
+                    <router-link :to="{ name: 'game', params: { id: game.id }}" > {{ game.id }}</router-link>
                 </div>
             </div>
         </div>

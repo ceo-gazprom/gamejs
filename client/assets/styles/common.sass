@@ -1,5 +1,7 @@
 @import fonts
 @import form
+@import ui/card
+@import ui/button
 
 body
     background: #ffffff
@@ -31,6 +33,17 @@ header
         &__user
             width: 20%
             display: flex
+
+            a
+                padding: 5px 7px
+                border: 3px solid #ea2159
+                border-radius: 5px
+                text-decoration: none
+                color: #ea2159
+                font-weight: lighter
+                font-size: 25px
+                margin-right: 10px
+
         &__user-name
         &__user-photo
 
@@ -80,43 +93,6 @@ footer
     &__docs
     &__copy 
 
-
-.card
-    width: 30%
-    margin-bottom: 10px
-    background: #efefef
-    &__wrap
-        border-radius: 5px
-        border: 1px solid #aaaaaa
-        overflow: hidden
-    &__cover
-        overflow: hidden
-
-        img
-            width: 100%
-
-    &__contetnt
-        padding: 15px
-
-.button
-    padding: 7px 10px
-    border-radius: 5px
-    outline: none
-    font-size: 17px
-    font-weight: bold
-
-    &__blue
-        color: #ffffff
-        background: #38b3ff
-    &__green
-        color: #ffffff
-        background: #70e863
-    &__pink
-        color: #8c0a0a
-        background: #fb004e
-    &__gold
-        color: #9a6d29
-        background: #fbc800
 
 .game-frame
     border: 0
