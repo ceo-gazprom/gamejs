@@ -3,23 +3,15 @@ version: '3.1'
 services:
 
   db:
-    image: postgres:11-alpine
-    restart: always
+    image: postgres:11
+
     environment:
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: crypto_games
+
     volumes:
       - ./database:/var/lib/postgresql/data
     ports: 
       - 5432:5432
-  
-  pga:
-    image: dpage/pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@admin.com
-      PGADMIN_DEFAULT_PASSWORD: pwdpwd
-    volumes:
-      - ./pgadmin:/var/lib/pgadmin
-    ports:
-      - "8089:80"
   

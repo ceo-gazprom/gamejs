@@ -1,22 +1,63 @@
 .form
-    background: #ffffff
-    padding: 15px
-    border-radius: 5px
+    min-width: 25vw
     margin: 0 auto
+    border-radius: 5px
+    overflow: hidden
+    background: #ffffff
     box-shadow: 10px 11px 5px -5px rgba(0, 0, 0, .2)
 
-    input
+    .form-header
+        &__wrap
+            position: relative
+            height: 100px
+            padding: 25px
+    
+        &__background
+            position: absolute
+            top: 0
+            right: 0 
+            bottom: 0
+            left: 0
+            background: url('/tmp/profile_cover.jpg')
+        
+        &__photo
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+            img
+                height: 64px
+                border-radius: 50%
+
+    .form-body
+        &__wrap
+            padding: 25px
+
+    .form-actions
+        &__wrap
+            padding: 25px
+            text-align: center
+
+        &__buttons
+
+    &__field
+        display: flex
+        margin-bottom: 20px
+        border-bottom: 1px solid #f1f0f0
         border-radius: 5px
-        border: 1px solid #f1f0f0
+
+    &__input
+        margin: 0
         padding: 7px 5px
-        outline: none
         width: 100%
+        border: none
+        outline: none
         box-sizing: border-box
-        margin-bottom: 15px
+        font-size: 20px
+
+    .input__error
+        border-color: #ff0000
 
     ::placeholder
-        color: #d4d4d4
-
-    &__header
-    &__content
-    &__bottom
+        color: #a5a5a5

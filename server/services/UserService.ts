@@ -55,4 +55,19 @@ export default class UserService {
                             .catch(err=>console.log(err));
         return response;
     }
+
+    /**
+     * Метод проверяет существует ли юзер в БД с таким `Username`
+     * 
+     * @param {string} name - Имя пользователя
+     * @return {boolean}
+     */
+    async checkUserExist (name:string) {
+        console.log(name);
+        let response = await getRepository(User)
+            .findAndCount({username: name})
+            .catch(console.error);
+        
+        return !! response[1];
+    }
 }

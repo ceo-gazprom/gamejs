@@ -1,13 +1,23 @@
+/**
+ * В данном маршруте содержатся вс endpoint-ы связанные с пользовтелем
+ * Основным является getProfile
+ */
+
 import * as express from 'express';
-import GameService from "../services/UserService";
+import * as passport from 'passport';
+import UserService from '../services/UserService';
 
 let router = express.Router();
 
-router.get('/signup', async (req, res) => {
-    let game = new GameService();
-    let response = await game.getAll();
-    res.send(response);
+/**
+ * Получить данные о пользователе
+ * 
+ * @method GET
+ */
+router.get('/profile', passport.authenticate('local'), (req, res) => {
+    res.status(200).send('Данные о пользователе');
 });
+
 
 
 export default router;
